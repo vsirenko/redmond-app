@@ -1,0 +1,104 @@
+@import '../../../../utils/global.scss';
+
+.popup {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    transition: all 0.5s ease;
+    padding: 10px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    z-index: 10;
+    
+}
+.active {
+    left: 0;
+}
+.tabs {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    background: $c-dark-l;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.tab {
+    width: calc(100% / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    &active {
+        background: $c-brand;
+        color: $c-light;
+    }
+}
+p {
+    margin-bottom: 10px;
+}
+.checkbox {
+    display: flex;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.check {
+    width: 20px !important;
+    margin-right: 5px;
+}
+.other {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &Subtitle {
+        font-size: 14px;
+    }
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.button {
+    width: calc(100% / 2 - 40px);
+    padding: 5px;
+    border-radius: 5px;
+    background: #3b5998;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    padding: 10px;
+    img {
+        margin-right: 10px;
+    }
+}
+.enter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    width: 150px;
+}
+
+.google {
+    background: $c-dark-l;
+    color: $c-dark;
+}
+.error {
+    display: flex;
+    justify-content: center;
+    color: $c-brand;
+    margin-bottom: 10px;
+}

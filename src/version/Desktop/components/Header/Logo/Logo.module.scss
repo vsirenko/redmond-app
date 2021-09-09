@@ -1,0 +1,25 @@
+@import "../../../../../utils/global.scss";
+
+
+@media (min-width: 768px) {
+    .icon {
+      width: 209px;
+      height: 48px;
+      fill: $c-brand;
+    }
+    .logo {
+      cursor: pointer;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .logo {
+      margin-left: 20px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .logo {
+      margin-left: 0;
+    }
+  }

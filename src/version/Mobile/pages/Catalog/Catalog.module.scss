@@ -1,0 +1,11 @@
+.wr {
+    margin: 10px;
+  }
+  .wrProducts {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 16px);
+    left: -8px;
+    position: relative;
+    overflow: hidden;
+  }

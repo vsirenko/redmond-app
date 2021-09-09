@@ -1,0 +1,33 @@
+.wr {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+
+.sort,
+.filter {
+  display: block;
+  width: 50%;
+}
+
+.sort {
+  padding-right: 8px;
+
+  select {
+    width: 100%;
+    background: #F6F8FA;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+}
+
+.filter {
+  padding-left: 8px;
+  .btn {
+    width: 100%;
+  }
+}

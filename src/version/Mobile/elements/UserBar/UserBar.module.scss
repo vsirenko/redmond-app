@@ -1,0 +1,93 @@
+@import "../../../../utils/global.scss";
+
+
+@media (min-width: 0px) {
+
+  .element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 9;
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgNjAgMjEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01OS42MTYzIDIwLjA1MzZIMC44MjgwNjRDNS42MzkzIDguNTY2MSAxNi45ODgzIDAuNDk1OTExIDMwLjIyMjIgMC40OTU5MTFDNDMuNDU2IDAuNDk1OTExIDU0LjgwNSA4LjU2NjEgNTkuNjE2MyAyMC4wNTM2WiIgZmlsbD0iI0Y2RjZGNiIgZmlsbC1vcGFjaXR5PSIwLjciLz4KPC9zdmc+Cg==');
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+      top: 0;
+      transition: all .2s ease;
+
+    }
+
+    .count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 14px;
+      height: 14px;
+      line-height: 14px;
+      border-radius: 50%;
+      position: absolute;
+      font-weight: bold;
+      font-size: 10px;
+      color: $c-light;
+      background: $c-brand;
+      top: 0;
+      left: calc(50% + 5px);
+    }
+
+    .icon {
+      display: block;
+      width: 22px;
+      height: 22px;
+      fill: $c-gray-l;
+      cursor: pointer;
+      transition: all .2s ease;
+    }
+
+    .title {
+      font-size: 9px;
+      color: $c-gray-l;
+      font-weight: bold;
+      transition: all .2s ease;
+    }
+
+    &:hover .icon,
+    &:focus .icon {
+      fill: $c-brand;
+    }
+
+    &:hover .title,
+    &:focus .title {
+      font-size: 10px;
+      color: $c-brand;
+    }
+
+    &:hover:before,
+    &:focus:before {
+      height: 10px;
+      top: -14px;
+    }
+
+  }
+
+}
+
+@media (min-width: 375px) {
+
+  .title {
+    margin-top: 3px;
+  }
+
+}
+
+

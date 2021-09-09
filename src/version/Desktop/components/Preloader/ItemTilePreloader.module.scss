@@ -1,0 +1,12 @@
+.icon {
+    width: calc(100% / 5);
+    height: 270px;
+    margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+    .icon {
+        width: calc(100% / 3);
+        height: 270px;
+        margin-bottom: 30px;
+    }
+}

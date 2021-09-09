@@ -1,0 +1,38 @@
+@import "../../../../utils/global.scss";
+
+.pagination {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .paginationNumber {
+    margin-right: 10px;
+    background-color: #f6f8fa;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  
+  }
+  .active {
+    background-color: $c-brand;
+    color: white;
+    transition: all 0.5s ease;
+    padding: 13px;
+  }
+  .arrow {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #f6f8fa;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

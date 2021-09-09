@@ -1,0 +1,41 @@
+//@import "../../../global";
+
+@media (min-width: 0px) {
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    background: rgba(246, 246, 246, 0.8);
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(7px);
+    border-radius: 20px 20px 0 0;
+    position: fixed;
+    z-index: 999;
+  }
+  .wr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: calc(100% - 16px);
+    height: 40px;
+    padding: 0 16px;
+    background: rgba(246, 246, 246, 0.7);
+  }
+
+}
+
+@media (min-width: 375px) {
+
+  .footer {
+    height: 64px;
+  }
+  .wr {
+    height: 48px;
+  }
+
+}

@@ -1,0 +1,97 @@
+@import "../../../../utils/global.scss";
+
+@media (min-width: 0px) {
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100% / 2 - 8px);
+    max-width: 100%;
+    margin: 0 4px 8px 4px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: $c-bg-l;
+    text-decoration: none;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+    > * {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    .wr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrImage {
+      display: block;
+      width: 50%;
+
+      overflow: hidden;
+    }
+
+    .img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title {
+      font-size: 12px;
+      line-height: 16px;
+      color: $c-dark;
+      text-align: center;
+      margin-top: 5%;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 10px;
+      transition: all 1.5s ease;
+      box-shadow: 0 0 0 0.2rem transparentize($c-dark, 1.0);
+    }
+
+    &:active:after {
+      box-shadow: 0 0 0 0.2rem transparentize($c-dark, 0.90);
+      transition: 0s;
+    }
+
+  }
+
+}
+
+@media (min-width: 375px) {
+
+  .item {
+    width: calc(100% / 3 - 8px);
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .item {
+    width: calc(100% / 4 - 8px);
+  }
+
+}

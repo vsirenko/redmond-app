@@ -1,0 +1,10 @@
+@import "../../../../../../utils/global.scss";
+
+.gallery {
+  display: flex;
+  border-radius: 5px;
+  padding: 8px;
+  background: $c-light;
+
+  height: 300px;
+}

@@ -1,0 +1,19 @@
+@import "../../../../../utils/global.scss";
+
+.catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 10px;
+  position: relative;
+ 
+}
+.icon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  fill: $c-gray-l;
+}

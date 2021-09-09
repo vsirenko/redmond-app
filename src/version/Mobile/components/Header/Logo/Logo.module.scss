@@ -1,0 +1,23 @@
+@import "../../../../../utils/global.scss";
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 80px - (16px * 2));
+  height: 40px;
+  border-radius: 10px;
+}
+.link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  height: 18px;
+  fill: $c-brand;
+}

@@ -1,0 +1,93 @@
+
+/* COLORS */
+$c-brand: #EC1550;
+$c-light: #FFFFFF;
+$c-gray-l: #999999;
+$c-dark: #292929;
+$c-dark-l: #F6F8FA;
+$c-bg-l: #F6F6F6;
+
+
+
+/* COLORS OF PROMOTIONAL ICONS */
+$c-new: #89D000; // новинка
+
+/* SHADOWS */
+$sh-b: 0px 3px 20px rgba(0, 0, 0, 0.1);
+
+
+
+
+/* GLOBAL STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  display: block;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+
+.uah {
+  &::after {
+    content: ' ₴'
+  }
+}
+
+@media (min-width: 0px) { // Mobile
+
+
+  body {
+    padding: 56px 0 56px 0;
+  }
+
+  h3, .h3 {
+    color: $c-dark;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+}
+
+@media (min-width: 320px) {
+
+}
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {  // Desktop
+
+  body {
+    padding: 70px 0 0 0;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

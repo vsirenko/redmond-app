@@ -1,0 +1,260 @@
+@import "../../../../utils/global.scss";
+
+
+@media (min-width: 0px) {
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 8px 30px 8px;
+    padding: 0px;
+    position: relative;
+    text-decoration: none;
+    color: $c-dark;
+
+    &:hover .wrImage:before {
+      width: 70%;
+      height: 70%;
+      border-radius: 20px;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background: $c-brand;
+    }
+
+    &:hover .image {
+      width: 100%;
+      transform: translate(-50%, -50%) rotate(4deg);
+
+    }
+
+  }
+  .wr {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+    > .wrImage {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .wrImage {
+    display: flex;
+    width: 100%;
+    height: 140px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: $c-dark-l;
+      border-radius: 10px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(0deg);
+      transition: all .5s ease;
+    }
+
+    .image {
+      display: block;
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .5s ease;
+      z-index: 0;
+    }
+
+    
+  }
+  .wrImage.new:before,
+  .wrImage.stock:before,
+  .wrImage.gift:before {
+    display: none;
+  }
+
+  .wish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: $c-light;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    transition: all .2s ease;
+
+    .icon {
+      fill: $c-gray-l;
+      width: 20px;
+      height: 20px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover .icon {
+      fill: $c-brand;
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 42px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: $c-dark;
+  }
+
+  .price {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    align-items: center;
+
+    .old {
+      display: flex;
+      width: 50%;
+      justify-content: flex-end;
+      padding-right: 8px;
+      font-size: 14px;
+      color: $c-gray-l;
+
+      span {
+        text-decoration-line: line-through;
+      }
+
+      span:after {
+        content: ' ₴';
+      }
+    }
+
+    .new {
+      display: flex;
+      width: 50%;
+      font-weight: 500;
+      justify-content: flex-start;
+      padding-right: 8px;
+
+      span:after {
+        content: ' ₴';
+      }
+    }
+  }
+
+  .btnWr {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    button {
+      width: 100%;
+      max-width: 140px;
+    }
+  }
+
+}
+
+@media (min-width: 300px) {
+
+  .item {
+    width: calc(100% / 2 - 16px);
+  }
+
+}
+
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 414px) {
+
+  //.item {
+  //  width: calc(100% / 3 - 16px);
+  //}
+  .title {
+    font-size: 14px;
+    line-height: 16px;
+    height: 48px;
+  }
+
+}
+
+@media (min-width: 540px) {
+
+
+}
+
+.grey {
+  background: $c-gray-l;
+  padding: 0;
+}
+
+.icon {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  right: 0;
+  bottom: 0;
+  left: -5%;
+  z-index: -1;
+}
+.wrItems {
+  display: flex;
+  width: 100%;
+  height: 140px;
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: all .5s ease;
+  }
+  .image {
+    display: block;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease;
+    z-index: 0;
+  }
+}

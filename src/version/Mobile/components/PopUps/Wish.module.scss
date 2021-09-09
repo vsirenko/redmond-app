@@ -1,0 +1,18 @@
+.popup {
+    position: fixed;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    transition: all 0.5s ease;
+    padding: 10px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    z-index: 10;
+    
+}
+
+.active {
+    right: 0;
+}

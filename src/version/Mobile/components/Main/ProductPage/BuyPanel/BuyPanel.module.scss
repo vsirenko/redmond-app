@@ -1,0 +1,45 @@
+@import "../../../../../../utils/global.scss";
+
+.bp, .buyOneClick {
+  display: flex;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 8px;
+  background: $c-light;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .old, .new {
+    display: flex;
+  }
+
+  .old {
+    padding-right: 10px;
+    font-size: 18px;
+    text-decoration-line: line-through;
+    color: $c-gray-l;
+  }
+
+  .new {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.buyOneClick {
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  font-size: 12px;
+  padding: 5px 0;
+}
+.form {
+
+}

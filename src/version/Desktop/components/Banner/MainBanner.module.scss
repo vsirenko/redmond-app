@@ -1,0 +1,112 @@
+@import "../../../../utils/global.scss";
+.banner {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    background-color:  $c-dark-l;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+        &:before {
+        content: '';
+        display: block;
+				padding-top: 30.23431594860166%;
+    }
+    > .wr {
+        display: flex;
+		position: absolute;
+		min-width: 100%;
+        min-height: 100%;
+        left: 0;
+        top: 0;	
+    }
+
+    img {
+     
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: 10px;
+        margin-right: 15px;
+}
+  }
+
+
+
+
+    .benner {
+        &:before {
+            content: '';
+            display: block;
+            padding-top: 30.23431594860166%;
+        }
+    }
+.wr {
+    width: 100%;
+    display: flex;
+    transition: 0.8s ease-in-out;
+}
+
+.infoWr {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.items {
+    width: 100px;
+    height: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.active {
+    background: $c-brand;
+
+}
+.left {
+    position: absolute;
+    z-index: 4;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    position: absolute;
+    z-index: 4;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+}
+.icon {
+    width: 50px;
+    fill: #E5E5E5;
+    transform: rotate(90deg);
+    cursor: pointer;
+    opacity: 0.4;
+    transition: all 0.5s ease;
+    &:hover {
+        opacity: 1;
+    }
+}
+.rotate {
+    transform: rotate(270deg);
+}

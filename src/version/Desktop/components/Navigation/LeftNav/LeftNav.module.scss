@@ -1,0 +1,90 @@
+@import "../../../../../utils/global.scss";
+
+.left__nav {
+    margin-right: 20px;
+    position: fixed;
+    left: 20px;
+    height: calc(100% - 110px);
+    overflow: scroll;
+   
+    z-index: 10;
+    scrollbar-width: none;
+    a {
+      text-decoration: none;
+      color: $c-dark;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .left__nav {
+      display: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    .left__nav {
+      display: block;
+    }
+  }
+  .left__nav::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  .left__nav::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+.shadow {
+  position: absolute;
+  z-index: 100;
+  left: 50px;
+  width: 600px;
+  height: 180px;
+  background-color: black;
+}
+
+.nav {
+  position: absolute;
+  z-index: 10;
+  width: calc(100% - 567px);
+  background-color: #999;
+}
+.shadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.8);
+  transition: all 2s ease;
+  animation: slidein 0.5s ease 1 normal;
+
+ 
+}
+
+@keyframes slidein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.navContent {
+
+  position: absolute;
+  top: 90px;
+  left: 190px;
+  width: calc(100% - 560px);
+  height: calc(100% - 120px);
+  padding: 25px;
+  border-radius: 10px;
+  background: #F6F8FA;
+  transition: all 2s ease;
+
+
+}
+
+.wr {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15px;
+}

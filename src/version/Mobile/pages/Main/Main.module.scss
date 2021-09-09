@@ -1,0 +1,13 @@
+.wr {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 16px);
+    left: -8px;
+    position: relative;
+    overflow: hidden;
+  }
+
+.mainWr {
+    padding: 0 8px;
+    margin-top: 10px;
+}

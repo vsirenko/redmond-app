@@ -1,0 +1,11 @@
+@import '../../../../utils/global.scss';
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: $c-dark-l;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}

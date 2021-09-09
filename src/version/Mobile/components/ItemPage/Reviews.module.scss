@@ -1,0 +1,68 @@
+@import '../../../../utils/global.scss';
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: $c-dark-l;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+.p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.bigInput {
+    width: 100%;
+    height: 150px;
+    border: none;
+    background: $c-dark-l;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.send {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+.score {
+    display: flex;
+}
+.stars {
+    margin-left: 10px;
+}
+.comments {
+    margin-bottom: 20px;
+    border-bottom: solid 2px $c-dark-l;
+    width: 100%;
+    overflow: hidden;
+}
+.commentName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .data {
+        font-size: 13px;
+        
+    }
+}
+.commentText {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    width: 100%;
+}
+
+.notReviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}

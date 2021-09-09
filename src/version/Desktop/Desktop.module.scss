@@ -1,0 +1,35 @@
+.wr {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+@media(min-width: 768px) {
+    .wr {
+        padding-top: 0;
+    }
+}
+
+@media(min-width: 1200px) {
+    .wr {
+        padding-top: 20px;
+    }
+}
+.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  
+  @media (min-width: 1200px) {
+    .content {
+      padding-left: 180px;
+      padding-right: 360px;
+    }
+  }

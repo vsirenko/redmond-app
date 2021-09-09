@@ -1,0 +1,67 @@
+@import "../../../../utils/global.scss";
+.popup {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+    overflow: hidden;
+}
+.active {
+    right: 0;
+}
+.contetns {
+    width: 100%;
+    height: 75%;
+    overflow: scroll;
+    padding: 20px;
+    padding-top: 0;
+}
+.order {
+    position: absolute;
+    bottom: 100px;
+    
+}
+.order {
+    width: calc(100%  - 40px);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(246, 246, 246, 0.5);
+}
+.totalSum {
+    background: #fff;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.clear {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.clear__icon {
+    width: 195px;
+    height: 195px;
+    fill: $c-gray-l;
+    margin-bottom: 16px;
+}
+.button {
+    background-color: $c-gray-l;
+}
+@media (min-width: 1200px) {
+    .popup {
+        display: none;
+    }
+}
